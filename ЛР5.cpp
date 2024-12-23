@@ -65,7 +65,7 @@ void task1() {
 		for (int i = 0; i < k; i++) {
 			// Перевірка коректності даних 
 			cout << "Enter x, y: " << endl;
-			if (check_in(x) || check_in(y)) {
+			if (!check_in(x) || !check_in(y)) {
 				cout << "Must be numeric!" << endl;
 			}
 			else
